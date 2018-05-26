@@ -11,7 +11,7 @@ package io.dsaexamples.searching;
  */
 public class BinarySearch {
 
-    private static int find(int[] a, int key){
+    public static int find(int[] a, int key){
 
         int low = 0;
         int high = a.length -1;
@@ -41,11 +41,4 @@ public class BinarySearch {
 
         return -1;
     }
-
-    public static void main(String[] args) {
-        int[] input = {1,5,18,20,35,46,70,90};
-        int key = 71;
-        System.out.println("Output is:" + find(input, key));
-    }
-
 }
